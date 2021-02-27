@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: : 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/background.jpg");
+}
+
+h1 {
+  color: #ffff00;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #ffff0f;
+  font-family: "copperplate", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2.5em;
+}
+
+.title {
+  width: 100%;
+}
+
+
+.search {
+  margin: 30px;
+}
+
+#characterInput {
+  margin-right: 20px;
+}
+
+#submitInput {
+
+}
+
+#result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.charaterInfo {
+
+}
+
+.genderInfo {
+
+}
+
+img {
+  height: 200px;
+  width: auto;
+  margin-top: 30px;
+}
+
+label {
+  color: white;
+  margin-right: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.planet,
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #b0bec5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.film {
+  width: 95%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: black;
+  text-decoration: none;
+  padding-right: 30px
+}
+
+.footer-link:hover {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.footer-link:active {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff !important;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-partner-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 650px) {
+  .planet,
+  .character {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .footer-partner-name {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 651px) and (max-width: 960px) {
+  .planet,
+  .character {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
